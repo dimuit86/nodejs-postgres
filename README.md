@@ -1,31 +1,17 @@
+# NodeJS API with Health Check and PostgreSQL
 
-# Create Node-Postgresql Project
+## Repository consists of following manifests
 
-nodejs api with postgresql databse
+* Source code for Node-API availble under ./src
 
+* Dockerfile available under ./src
 
+* docker-compose.yaml available under ./ project root
 
+* environment variable availble on .env
 
+* Kubernetes K8S manfests availble on ./k8s-node-postgres
 
+* Helm charts availble on ./helm-node-postgres
 
-
-
-
-
-
-
-
-
-
-# Create a Helm Char for Node-Postgres-Stack Deployment
-
-helm create helm-node-postgres
-
-cd helm-node-postgres/
-
-values.yaml
-
-Image repositories:
-    nodepostgres/node-api:v1
-    nodepostgres/postgress:v1
-
+* Screenshots / Proof of Concept availble on ./screenshots-poc
