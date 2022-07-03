@@ -2,7 +2,7 @@ version: "3.7"
 services:
   nodejs-api:
     build:
-      context: ./
+      context: ./src # dimuit86/node-api:latest
     container_name: nodejs-api
     restart: always
     ports:

@@ -5,6 +5,7 @@ const create = require("./routes/create");
 const read = require("./routes/read.js");
 const update = require("./routes/update");
 const del = require("./routes/del");
+const health = require("./routes/health");
 const app = express();
 
 //configuring express
@@ -19,6 +20,7 @@ app.use("/create", create);
 app.use("/read", read);
 app.use("/update", update);
 app.use("/delete", del);
+app.use("/healthz", health);
 
 app.get("/", async (req, res) => {
   const query = `
